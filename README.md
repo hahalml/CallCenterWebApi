@@ -17,7 +17,9 @@ CallCenterWebApi （语音电话Web接口程序）
 		注意！数据库采用的是MSSSQL，通过配置DSN连接数据库
 ###3、运行环境
 		系统之在window 2008 32位、Window 7 32位测试过
-###3、使用步骤
+###4、使用步骤
 		(1)、运行CallCenterWebApi.exe
 		(2)、在浏览器输入http://localhost:8082/
 		(3)、输入测试的数据，语音设备能拨打电话说明程序运行成功
+###5、源码编译
+		 go install vistech/CallCenterWebApi
