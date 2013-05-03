@@ -1,0 +1,42 @@
+{{define "index"}}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<title>语音电话卡接口</title>
+		<meta name="description" content="" />
+		<meta name="author" content="tsing" />
+		<link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="/static/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" />
+	</head>
+	<body>
+		<form method="post" action="/CallCenterWebApi" class="form-horizontal">
+			<fieldset>
+				<legend>
+					调用接口示例
+				</legend>
+				<div class="control-group">
+					<label class="control-label" for="inputTelephones">电话</label>
+					<div class="controls">
+						<input type="text" id="inputTelephones" placeholder="13965116873,13965116874" name="telephones">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="inputContent">内容</label>
+					<div class="controls">
+						<textarea class="input-xlarge" id="inputContent" rows="5" name="content">hello</textarea>
+					</div>
+				</div>
+				<div class="form-actions">
+					<button type="submit" class="btn btn-primary">
+						确定
+					</button>
+				</div>
+			</fieldset>
+		</form>
+		<script src="/static/jquery/jquery-1.9.1.min.js" type="text/javascript"></script>
+		<script src="/static/js/bootstrap.min.js" type="teext/javascript" ></script>
+	</body>
+</html>
+{{end}}
